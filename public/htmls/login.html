@@ -1,0 +1,35 @@
+<section layout="column" flex>
+    <div flex="10"></div>
+    <section layout="row" layout-align="center center">
+        <md-whiteframe class="md-whiteframe-24dp" flex-xs="100" flex-sm="50" flex-gt-sm="35" flex-gt-md="25" layout layout-align="center center">
+            <div layout="column" flex >
+                <div layout="row">
+                    <md-toolbar flex>
+                        <div class="md-toolbar-tools">
+                            Login
+                        </div>
+                    </md-toolbar>
+                </div>
+                </br>
+                <md-input-container style="padding-left: 25px; padding-right: 25px;">
+                    <label style="padding-left: 25px; padding-right: 25px;">Username</label>
+                    <input ng-model="loginCtrl.loginModel.username" type="text">
+                </md-input-container>
+
+                <md-input-container style="padding-left: 25px; padding-right: 25px;">
+                    <label style="padding-left: 25px; padding-right: 25px;">Password</label>
+                    <input ng-model="loginCtrl.loginModel.password" type="password">
+                </md-input-container>
+                <div layout="row" layout-align="center center">
+                    <md-button ng-click="loginCtrl.login(loginCtrl.loginModel)" class="md-fab md-primary">
+                        <i class="fa fa-sign-in fa-2x"></i>
+                    </md-button>
+                </div>
+                <div flex="5"></div>
+
+            </div>
+
+        </md-whiteframe>
+    </section>
+    <div flex="5"></div>
+</section>

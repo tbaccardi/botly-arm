@@ -1,0 +1,19 @@
+a {
+  color: #00B7FF;
+}
+
+video#background-video { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(videos/testfileforvideo.mp4) no-repeat;
+    background-size: cover; 
+}
